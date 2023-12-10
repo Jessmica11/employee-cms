@@ -45,10 +45,55 @@ function startApp() {
         'Exit',
       ],
     })
+    // choices will start their related functions:
+    .then((answer) => {
+      switch (answer.action) {
+        case 'View all departments':
+    // start viewDepartments() when this choice is made
+          viewDepartments();
+          break;
 
+        case 'View all roles':
+    // start viewRoles() when this choice is made
+          viewRoles();
+          break;
 
-// functions for each event to happen 
-// depending on user choise
+        case 'View all employees':
+    // start viewEmployees() when this choice is made
+          viewEmployees();
+          break;
+
+        case 'Add a department':
+    // start addDepartment() when this choice is made
+          addDepartment();
+          break;
+
+        case 'Add a role':
+    // start addRole() when this choice is made
+          addRole();
+          break;
+
+        case 'Add an employee':
+    // start addEmployee() when this choice is made
+          addEmployee();
+          break;
+
+        case 'Update an employee role':
+    // start updateEmployeeRole() when this choice is made
+          updateEmployeeRole();
+          break;
+
+        case 'Exit':
+    // Exit = end the program
+          connection.end();
+          break;
+      }
+    });
+}
+
+// functions for each event to happen, 
+// depending on user choice
+
 
 
 
