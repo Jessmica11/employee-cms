@@ -146,7 +146,7 @@ function addDepartment() {
     .prompt({
       name: 'name',
       type: 'input',
-      message: 'Enter the name of the department:',
+      message: 'Enter the name of the department (Legal, Engineering, Sales, Marketing, CEO):',
     })
     .then((answer) => {
       const query = 'INSERT INTO department SET ?';
@@ -213,7 +213,7 @@ function addEmployee() {
       {
         name: 'role_id',
         type: 'input',
-        message: "Enter the employee's role ID:",
+        message: "Enter the employee's role ID (1-5):",
       },
       {
         name: 'manager_id',
