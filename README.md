@@ -10,7 +10,13 @@ Because this application won’t be deployed, you’ll also need to create a wal
 
 ## Project Resources
 
-[Walkthrough Video of Application]()
+[Walkthrough Video of Application](https://drive.google.com/file/d/1bHfxMoXxY1u6qiJ5pE5muCXqS1L67njf/view?usp=sharing)
+
+[TRUNCATE TABLE Command for SQL](https://www.tutorialspoint.com/sql/sql-truncate-table.htm)
+
+### Pain Points
+
+I was going to query the db like we've been taught in class (usually right under the const mysql), but I wasn't sure how I would sort through SELECT \* for all 3 tables and then work through them with each function, so I only queried the specific data I needed within each function for each user choice.
 
 ## User Story
 
